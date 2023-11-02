@@ -1,0 +1,4 @@
+# ignore these large files
+zippedData/*.csv
+zippedData/*.tsv
+zippedData/*.db
