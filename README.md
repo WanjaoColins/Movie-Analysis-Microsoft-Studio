@@ -1,72 +1,65 @@
-# Phase 1 Project Template - Minimum Viable Product (MVP)
+# Movie-Analysis-Project
 
-![blueprint](images/blueprint.png)
+## Overview
 
-This repository is like a blueprint, providing structure for your first End of Phase Project. We suggest you base your Phase 1 project off of this repository so you can focus less on formatting and organization, and more on the _analysis and communication skills_ that will support your progress through the course. This template is designed to make your project portfolio-ready in order to impress the future employers who will review it. 
+This project aims to analyze the factors contributing to the success of movies, with a focus on box office performance and audience preferences. By exploring various datasets related to movie information, I provide insights into which genres are most popular, the impact of runtime on success, and trends in box office performance over the years.
 
-## Repository Contents
+## Business Problem
 
-Below is a list of the contents of this repository - instructions for using them are in the next section.
+The movie industry is highly competitive, and understanding the key drivers of movie success is essential for making informed decisions. My analysis seeks to answer critical questions such as:
+- What genres perform best at the box office?
+- Does the runtime of a movie influence its success?
+- How have box office trends evolved over the years?
 
-- `README.md`: The README for this repo branch explaining it's contents - you're reading it now
-- `TEMPLATE_README.md`: An example of a project README that provides a brief overview of your whole project
-- `dsc-phase1-project-template.ipynb`: A starter Jupyter Notebook with headings, code examples and guiding questions
-- `DS_Project_Presentation_Template.pdf`: A starter slide deck presenting your project - here is an [editable version](https://docs.google.com/presentation/d/1PaiH1bleXnhiPjTPsAXQSiAK0nkaRlseQIr_Yb-0mz0/copy)
-- `zippedData` folder: A folder for the data you reference with your code
-- `images` folder: A folder for the images you reference in your files 
-- `.gitignore`: A hidden file that tells git to not track certain files and folders
+## Data
 
-## Instructions For Using This Repository
+I used three primary datasets for this analysis:
+- IMDB title basics
+- IMDB title ratings
+- Box Office Mojo movie gross
+- tmdb movies
 
-### Fork This Repository
+The data was processed and cleaned to ensure its quality and reliability for analysis.
 
-**For a group project**, have only one team member do these steps:
+## Methodology
 
-1. Fork this repository to your personal account
-   - In GitHub, go to this repository and click the "Fork" button in the upper right
-   
-2. Change the name of your fork of this repo to a _descriptive_ name of your choosing
-   - In GitHub, go to your fork of this repo -> "Settings" -> "Options" -> "Repository Name" -> "Rename"
-   - Make the name descriptive, since potential employers will read it. Ex: "Microsoft-Movie-Analysis" is better than "Project-1"
+1. Data Collection: I gathered datasets from multiple sources, including IMDb and Box Office Mojo.
+2. Data Cleaning: I addressed missing values, duplicates, and structural issues within the datasets.
+3. Data Exploration: I explored relationships between different variables and conducted visualizations to gain insights.
+4. Data Modeling: I used statistical analysis and data visualization techniques to answer specific questions related to movie success.
+5. Recommendations: Based on the findings, I provide recommendations for movie industry stakeholders.
 
-3. Use `git clone` to clone your fork of this repo to your local computer
+## Results
 
-4. **For a group project**, add team members as collaborators to your fork of this repo
-   - In GitHub, go to your fork of this repo -> "Settings" -> "Manage Access" -> "Invite Teams or People"
-   - Add your project team members as collaborators & send them the repo GitHub URL
+My analysis uncovered several key findings:
+- The genres of Adventure, Action, Drama, Comedy, and Animation tend to perform well at the box office.
+- The average runtime of a movie does not strongly correlate with its box office success.
+- There is an observable trend of increased box office revenue in recent years.
 
-### Work In Your Fork Of This Repository
+## Recommendations
 
-- Work in the repo clone that you created on your local machine
-- Start writing and coding in the Jupyter Notebook `dsc-phase1-project-template.ipynb`
-- Fill in the README template in `TEMPLATE_README.md`
-- Use `git add`, `git commit`, and `git push` often to update your repo in GitHub
-   - For a refresher on how to do this and why it's important, review Topic 2: Bash and Git
+Based on the analysis, I offer the following recommendations:
+- Producers should consider investing in movies of the popular genres identified.
+- Filmmakers should focus on storytelling and quality rather than runtime.
+- Movie studios can capitalize on the trend of increasing box office revenue by releasing movies during peak periods.
 
-### Use The Slide Template
+## Limitations
 
-1. Go to [this link](https://docs.google.com/presentation/d/1PaiH1bleXnhiPjTPsAXQSiAK0nkaRlseQIr_Yb-0mz0/copy) to make an editable copy of the slide deck in your own Google Drive account
-2. Go to "Slide," select "Change Theme," and pick a theme you like so your presentation doesn't look like everyone else's
-3. **For a group project**, click the "Share" button and add your teammates as editors
+It's essential to acknowledge some limitations in the analysis:
+- The datasets are based on historical data and may not reflect current industry trends.
+- The dataset may contain errors or missing information.
+- External factors not included in the dataset, such as marketing strategies, also influence movie success.
 
-### Tidy Up Your Project
+## Next Steps
 
-- Change the file name of the Jupyter Notebook (`dsc-phase1-project-template.ipynb`) to something more descriptive
-- Save an appropriately-named PDF version of your slide deck to the repository
-- Rename the template readme you've been working in by running `git mv TEMPLATE_README.md README.md`
-- Delete unnecessary files from the repo using `git rm`
-   - The presentation PDF: `DS_Project_Presentation_Template.pdf`
-   - Any unused data files in the `zippedData` folder
-   - Any unused images in the `images` folder
-- Utilize the .gitignore file to ignore large unzipped data files in the `zippedData` folder
-   - Add `*.csv`,`*.tsv`, and `*.db` to the .gitignore file
+To enhance this project, we can consider the following future steps:
+- Incorporating external data, such as marketing budgets and competition.
+- Conducting sentiment analysis of audience reviews to gain a deeper understanding of movie reception.
+- Developing predictive models for box office performance.
 
-### Submit Your Project
+## Contributor
 
-To submit your project, please follow the instructions in the "Project Submission & Review" page in the Milestones course.
+- [Colins Ngige Wanjao]
 
-***
-### Notes
 
-- The visualizations in the notebook use best practices for visualization that you should try to emulate. For example, they have clear axes, descriptive titles, and appropriate number formatting
-- The `dsc-phase1-project-template.ipynb` is intended to be the _final version_ of your project. The first notebook you create will not look like this. You are encouraged to start with a very disorderly notebook and clean it as you go
+
